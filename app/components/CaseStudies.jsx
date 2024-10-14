@@ -18,7 +18,7 @@ const CaseStudies = () => {
           {caseStudies.map((study) => (
             <div key={study.title} className="flex flex-col items-center rounded-lg overflow-hidden bg-white relative pb-6">
               <div className="relative w-full">
-              // eslint-disable-next-line next/no-img-element
+              {/* eslint-disable-next-line next/no-img-element */}
                 <img src={study.imageUrl} alt={study.title} className="h-48 w-full object-cover" />
                 <div className="pt-3 absolute inset-0 bg-gradient-to-t from-transparent to-gray-800 opacity-25 rounded-lg"></div>
               </div>

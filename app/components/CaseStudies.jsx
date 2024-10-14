@@ -1,7 +1,6 @@
 // components/CaseStudies.jsx
-
-
 import React from 'react';
+import Image from 'next/image'; // Import the Image component from next/image
 
 const CaseStudies = () => {
   const caseStudies = [
@@ -18,8 +17,14 @@ const CaseStudies = () => {
           {caseStudies.map((study) => (
             <div key={study.title} className="flex flex-col items-center rounded-lg overflow-hidden bg-white relative pb-6">
               <div className="relative w-full">
-              {/* eslint-disable-next-line next/no-img-element */}
-                <img src={study.imageUrl} alt={study.title} className="h-48 w-full object-cover" />
+                <Image 
+                  src={study.imageUrl} 
+                  alt={study.title} 
+                  className="h-48 w-full object-cover" 
+                  layout="responsive" // Use layout="responsive" for better responsiveness
+                  width={500} // Adjust these values as necessary
+                  height={300} // Adjust these values as necessary
+                />
                 <div className="pt-3 absolute inset-0 bg-gradient-to-t from-transparent to-gray-800 opacity-25 rounded-lg"></div>
               </div>
               <h3 className="text-lg font-semibold text-gray-800 p-2">{study.title}</h3>
@@ -35,4 +40,3 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
-

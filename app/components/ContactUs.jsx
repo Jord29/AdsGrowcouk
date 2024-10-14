@@ -33,9 +33,8 @@ const ContactUs = () => {
       } else {
         setStatus('Failed to send message.');
       }
-    } catch (error) {
-      // Use the error variable if you want to log it or display it
-      console.error(error); // Optional: Log the error for debugging
+    } catch (err) { // Changed 'error' to 'err'
+      console.error(err); // Log the error for debugging
       setStatus('Failed to send message.');
     }
   };

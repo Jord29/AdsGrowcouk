@@ -75,9 +75,6 @@ const Services = () => {
               src={service.image}
               alt={service.title}
               className="absolute bottom-4 right-4 w-16 h-16 opacity-30"
-              width={64} // Specify width
-              height={64} // Specify height
-              priority // Optional: use this if the image is important for the layout
             />
           </div>
         ))}

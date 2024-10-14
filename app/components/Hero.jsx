@@ -36,16 +36,16 @@ const Hero = () => {
           {/* Badges Section */}
           <div className="flex items-center space-x-4">
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="Clutch" className="h-8" width={150} height={150} />
+              <Image src="icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="Clutch" className="h-8" />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="DesignRush" className="h-8" width={150} height={150} />
+              <Image src="/icons/Facebook-Reviews-Badge-Copy.png" alt="Facebook" className="h-8" />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/Facebook-Reviews-Badge-Copy.png" alt="Facebook" className="h-8" width={150} height={150} />
+              <Image src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="DesignRush" className="h-8" />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/30_20230315105512_7420361_large-150x150.png" alt="Google" className="h-8" width={150} height={150} />
+              <Image src="/icons/30_20230315105512_7420361_large-150x150.png" alt="Google" className="h-8" />
             </div>
           </div>
         </div>

@@ -21,9 +21,6 @@ const CaseStudies = () => {
                   src={study.imageUrl} 
                   alt={study.title} 
                   className="h-48 w-full object-cover" 
-                  layout="responsive" // Use layout="responsive" for better responsiveness
-                  width={500} // Adjust these values as necessary
-                  height={300} // Adjust these values as necessary
                 />
                 <div className="pt-3 absolute inset-0 bg-gradient-to-t from-transparent to-gray-800 opacity-25 rounded-lg"></div>
               </div>

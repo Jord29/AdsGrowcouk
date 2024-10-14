@@ -4,6 +4,7 @@
 
 import React from 'react';
 import { Star, ArrowRight } from 'lucide-react';
+import Image from 'next/image'; // Import the Image component from next/image
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           <span className="block text-blue-600">With Powerful Google and Facebook Ads</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600">
-          We help businesses grow online with professionally run Google and Facebook ads management. 
+          We help businesses grow online with professionally run Google and Facebook ads management.
         </p>
 
         {/* Refined 5-Star Rating Section with Badges */}
@@ -35,16 +36,16 @@ const Hero = () => {
           {/* Badges Section */}
           <div className="flex items-center space-x-4">
             <div className="bg-gray-100 p-2 rounded-lg">
-              <img src="icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="Clutch" className="h-8" />
+              <Image src="icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="Clutch" className="h-8" width={150} height={150} />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <img src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="DesignRush" className="h-8" />
+              <Image src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="DesignRush" className="h-8" width={150} height={150} />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <img src="/icons/Facebook-Reviews-Badge-Copy.png" alt="Facebook" className="h-8" />
+              <Image src="/icons/Facebook-Reviews-Badge-Copy.png" alt="Facebook" className="h-8" width={150} height={150} />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <img src="/icons/30_20230315105512_7420361_large-150x150.png" alt="Google" className="h-8" />
+              <Image src="/icons/30_20230315105512_7420361_large-150x150.png" alt="Google" className="h-8" width={150} height={150} />
             </div>
           </div>
         </div>
@@ -69,11 +70,11 @@ const Hero = () => {
         {/* Trusted By Section with Company Logos */}
         <div className="mt-12">
           <p className="font-medium text-gray-500">Trusted by hundreds of companies, including local businesses and ecommerce brands</p>
-          <div className="mt-8 grid grid-cols-2 gap-10 md:grid-cols-4 justify-center justfy-items-center items-center mx-auto max-w-xl ">
-            <img src="/icons/logo.png.webp" alt="Nova Tissue" className="h-12 w-full object-contain" />
-            <img src="/images/BATHROOM-10-e1713813123334.png" alt="Company 2" className="h-12 w-full object-contain" />
-            <img src="/images/cropped-440971998_1402314967320734_801390844172152310_n-e1714760864427.png" alt="Company 3" className="h-12 w-full object-contain" />
-            <img src="/images/logo-final-01.png" alt="Company 4" className="h-12 w-full object-contain" />
+          <div className="mt-8 grid grid-cols-2 gap-10 md:grid-cols-4 justify-center justify-items-center items-center mx-auto max-w-xl">
+            <Image src="/icons/logo.png.webp" alt="Nova Tissue" className="h-12 w-full object-contain" width={150} height={50} />
+            <Image src="/images/BATHROOM-10-e1713813123334.png" alt="Company 2" className="h-12 w-full object-contain" width={150} height={50} />
+            <Image src="/images/cropped-440971998_1402314967320734_801390844172152310_n-e1714760864427.png" alt="Company 3" className="h-12 w-full object-contain" width={150} height={50} />
+            <Image src="/images/logo-final-01.png" alt="Company 4" className="h-12 w-full object-contain" width={150} height={50} />
           </div>
         </div>
       </div>
@@ -82,6 +83,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-

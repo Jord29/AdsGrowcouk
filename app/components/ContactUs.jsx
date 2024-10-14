@@ -1,31 +1,7 @@
 "use client"; // Add this at the very top of your component file
 
-
 // components/ContactUs.jsx
 import React, { useState } from 'react';
-
-// app/components/ContactUs.jsx
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  setStatus('Sending...');
-
-  try {
-    const response = await fetch('/api/sendEmail', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
-      setFormData({ name: '', email: '', message: '' });
-      setStatus('Message sent successfully!');
-    } else {
-      setStatus('Failed to send message.');
-    }
-  } catch {
-    setStatus('Failed to send message.');
-  }
-};
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +21,6 @@ const ContactUs = () => {
     setStatus('Sending...');
 
     try {
-      // Replace with your API endpoint or service
       const response = await fetch('/api/sendEmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -59,6 +34,8 @@ const ContactUs = () => {
         setStatus('Failed to send message.');
       }
     } catch (error) {
+      // Use the error variable if you want to log it or display it
+      console.error(error); // Optional: Log the error for debugging
       setStatus('Failed to send message.');
     }
   };

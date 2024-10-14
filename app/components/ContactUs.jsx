@@ -22,7 +22,7 @@ const handleSubmit = async (e) => {
     } else {
       setStatus('Failed to send message.');
     }
-  } catch (error) {
+  } catch {
     setStatus('Failed to send message.');
   }
 };

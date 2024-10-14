@@ -1,9 +1,8 @@
 "use client";
 
-// components/Services.jsx
-
 import React from 'react';
 import { CheckCircle } from 'lucide-react'; // Using lucide-react for icons
+import Image from 'next/image'; // Import Image from next/image
 
 const servicesData = [
   {
@@ -72,10 +71,13 @@ const Services = () => {
             </ul>
 
             {/* Transparent Image (Bottom Right) */}
-            <img
+            <Image
               src={service.image}
               alt={service.title}
               className="absolute bottom-4 right-4 w-16 h-16 opacity-30"
+              width={64} // Specify width
+              height={64} // Specify height
+              priority // Optional: use this if the image is important for the layout
             />
           </div>
         ))}
@@ -85,4 +87,3 @@ const Services = () => {
 };
 
 export default Services;
-

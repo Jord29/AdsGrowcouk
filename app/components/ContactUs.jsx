@@ -33,8 +33,7 @@ const ContactUs = () => {
       } else {
         setStatus('Failed to send message.');
       }
-    } catch (err) { // Changed 'error' to 'err'
-      console.error(err); // Log the error for debugging
+    } catch {
       setStatus('Failed to send message.');
     }
   };

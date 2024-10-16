@@ -36,16 +36,40 @@ const Hero = () => {
           {/* Badges Section */}
           <div className="flex items-center space-x-4">
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="Clutch" className="h-8" />
+              <Image 
+                src="/icons/Clutch-Badge-Blue-270x270-1-150x150.png" 
+                alt="Clutch" 
+                className="h-8" 
+                width={32} 
+                height={32} 
+              />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/Facebook-Reviews-Badge-Copy.png" alt="Facebook" className="h-8" />
+              <Image 
+                src="/icons/Facebook-Reviews-Badge-Copy.png" 
+                alt="Facebook" 
+                className="h-8" 
+                width={32} 
+                height={32} 
+              />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="DesignRush" className="h-8" />
+              <Image 
+                src="/icons/Verfifed-Agency-Hexagonal-v1.png" 
+                alt="DesignRush" 
+                className="h-8" 
+                width={32} 
+                height={32} 
+              />
             </div>
             <div className="bg-gray-100 p-2 rounded-lg">
-              <Image src="/icons/30_20230315105512_7420361_large-150x150.png" alt="Google" className="h-8" />
+              <Image 
+                src="/icons/30_20230315105512_7420361_large-150x150.png" 
+                alt="Google" 
+                className="h-8" 
+                width={32} 
+                height={32} 
+              />
             </div>
           </div>
         </div>
@@ -71,10 +95,34 @@ const Hero = () => {
         <div className="mt-12">
           <p className="font-medium text-gray-500">Trusted by hundreds of companies, including local businesses and ecommerce brands</p>
           <div className="mt-8 grid grid-cols-2 gap-10 md:grid-cols-4 justify-center justify-items-center items-center mx-auto max-w-xl">
-            <Image src="/icons/logo.png.webp" alt="Nova Tissue" className="h-12 w-full object-contain" width={150} height={50} />
-            <Image src="/images/BATHROOM-10-e1713813123334.png" alt="Company 2" className="h-12 w-full object-contain" width={150} height={50} />
-            <Image src="/images/cropped-440971998_1402314967320734_801390844172152310_n-e1714760864427.png" alt="Company 3" className="h-12 w-full object-contain" width={150} height={50} />
-            <Image src="/images/logo-final-01.png" alt="Company 4" className="h-12 w-full object-contain" width={150} height={50} />
+            <Image 
+              src="/icons/logo.png.webp" 
+              alt="Nova Tissue" 
+              className="h-12 w-full object-contain" 
+              width={150} 
+              height={50} 
+            />
+            <Image 
+              src="/images/BATHROOM-10-e1713813123334.png" 
+              alt="Company 2" 
+              className="h-12 w-full object-contain" 
+              width={150} 
+              height={50} 
+            />
+            <Image 
+              src="/images/cropped-440971998_1402314967320734_801390844172152310_n-e1714760864427.png" 
+              alt="Company 3" 
+              className="h-12 w-full object-contain" 
+              width={150} 
+              height={50} 
+            />
+            <Image 
+              src="/images/logo-final-01.png" 
+              alt="Company 4" 
+              className="h-12 w-full object-contain" 
+              width={150} 
+              height={50} 
+            />
           </div>
         </div>
       </div>

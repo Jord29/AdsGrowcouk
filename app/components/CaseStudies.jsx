@@ -4,9 +4,27 @@ import Image from 'next/image'; // Import the Image component from next/image
 
 const CaseStudies = () => {
   const caseStudies = [
-    { title: 'Nova Tissue', description: 'Achieved an 11x Return on Ad Spend', imageUrl: 'https://websitegrow.co.uk/wp-content/uploads/2024/04/Screenshot-2024-07-31-at-19.18.01.png' },
-    { title: 'Book Your Boiler', description: 'Doubled ROI for a Local Business', imageUrl: 'https://websitegrow.co.uk/wp-content/uploads/2024/04/Screenshot-2024-08-09-at-19.11.18.png' },
-    { title: 'MAK Roofing Ltd', description: 'Increased Inquiries by 100%', imageUrl: '/images/439941655_727795805950597_5173042821696899852_n.jpg' },
+    {
+      title: 'Nova Tissue',
+      description: 'Achieved an 11x Return on Ad Spend',
+      imageUrl: 'https://websitegrow.co.uk/wp-content/uploads/2024/04/Screenshot-2024-07-31-at-19.18.01.png',
+      width: 600,  // Set the image width
+      height: 400, // Set the image height
+    },
+    {
+      title: 'Book Your Boiler',
+      description: 'Doubled ROI for a Local Business',
+      imageUrl: 'https://websitegrow.co.uk/wp-content/uploads/2024/04/Screenshot-2024-08-09-at-19.11.18.png',
+      width: 600,  // Set the image width
+      height: 400, // Set the image height
+    },
+    {
+      title: 'MAK Roofing Ltd',
+      description: 'Increased Inquiries by 100%',
+      imageUrl: '/images/439941655_727795805950597_5173042821696899852_n.jpg',
+      width: 600,  // Set the image width for the local image
+      height: 400, // Set the image height for the local image
+    },
   ];
 
   return (
@@ -21,6 +39,8 @@ const CaseStudies = () => {
                   src={study.imageUrl} 
                   alt={study.title} 
                   className="h-48 w-full object-cover" 
+                  width={study.width}  // Use width from the data
+                  height={study.height} // Use height from the data
                 />
                 <div className="pt-3 absolute inset-0 bg-gradient-to-t from-transparent to-gray-800 opacity-25 rounded-lg"></div>
               </div>

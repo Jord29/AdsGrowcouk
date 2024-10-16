@@ -31,27 +31,39 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`bg-white relative z-50 px-4 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
-      <div className={`mx-auto max-w-7xl rounded-full transition-all duration-300 
+    <div
+      className={`sticky top-0 z-50 px-4 py-4 transition-all duration-300`}
+    >
+      <div
+        className={`mx-auto max-w-7xl rounded-full transition-all duration-300 
           ${scrolled ? 'bg-white/90 backdrop-blur-sm shadow-lg' : 'bg-white/50 backdrop-blur-sm'} 
-          px-4 sm:px-6 lg:px-8 border border-gray-200/50`}>
+          px-4 sm:px-6 lg:px-8 border border-gray-200/50`}
+      >
         <div className="flex h-16 items-center justify-between">
           <div className="flex-shrink-0">
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text">
-              AdsGrow
-            </span>
+            {/* Wrap the AdsGrow text in a Link component */}
+            <Link href="/" passHref>
+              <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 text-transparent bg-clip-text cursor-pointer">
+                AdsGrow
+              </span>
+            </Link>
           </div>
 
           <nav className="hidden md:flex space-x-1">
             {navItems.map((item) => (
               <div key={item.name} className="relative group">
-                <Link href={item.href}> {/* Use Link component for navigation */}
+                <Link href={item.href}>
                   <button
                     className="flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors rounded-full hover:bg-white/50"
                     onClick={() => setActiveSubmenu(activeSubmenu === item.name ? null : item.name)}
                   >
                     {item.name}
-                    {item.submenu && <ChevronDown size={16} className="ml-1 transform group-hover:rotate-180 transition-transform duration-200" />}
+                    {item.submenu && (
+                      <ChevronDown
+                        size={16}
+                        className="ml-1 transform group-hover:rotate-180 transition-transform duration-200"
+                      />
+                    )}
                   </button>
                 </Link>
 
@@ -99,13 +111,20 @@ const Navbar = () => {
             <div className="space-y-1">
               {navItems.map((item) => (
                 <div key={item.name}>
-                  <Link href={item.href}> {/* Use Link component for navigation */}
+                  <Link href={item.href}>
                     <button
                       onClick={() => setActiveSubmenu(activeSubmenu === item.name ? null : item.name)}
                       className="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
                     >
                       {item.name}
-                      {item.submenu && <ChevronDown size={16} className={`transform transition-transform duration-200 ${activeSubmenu === item.name ? 'rotate-180' : ''}`} />}
+                      {item.submenu && (
+                        <ChevronDown
+                          size={16}
+                          className={`transform transition-transform duration-200 ${
+                            activeSubmenu === item.name ? 'rotate-180' : ''
+                          }`}
+                        />
+                      )}
                     </button>
                   </Link>
 

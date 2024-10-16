@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'AdsGrow',
-  description: 'Showcasing services and portfolio',
+  description: 'Leading Facebook and Google Ads ran by professionals to enable you to focus on your business. ',
 };
 
 export default function RootLayout({ children }) {

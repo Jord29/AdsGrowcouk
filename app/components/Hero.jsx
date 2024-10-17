@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { Star, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -16,9 +18,9 @@ const Hero = () => {
         {/* Social Proof */}
         <div className="flex items-center justify-center space-x-2 mb-12">
           <div className="flex -space-x-2">
-            <img src="/icons/30_20230315105512_7420361_large-150x150.png" alt="User" className="w-8 h-8 rounded-full border-2 border-black"/>
-            <img src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="User" className="w-8 h-8 rounded-full border-2 border-black"/>
-            <img src="/icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="User" className="w-8 h-8 rounded-full border-2 border-black"/>
+            <Image src="/icons/30_20230315105512_7420361_large-150x150.png" alt="User" width={32} height={32} className="rounded-full border-2 border-black"/>
+            <Image src="/icons/Verfifed-Agency-Hexagonal-v1.png" alt="User" width={32} height={32} className="rounded-full border-2 border-black"/>
+            <Image src="/icons/Clutch-Badge-Blue-270x270-1-150x150.png" alt="User" width={32} height={32} className="rounded-full border-2 border-black"/>
           </div>
           <div className="flex items-center text-white">
             <Star fill="currentColor" size={20}/>
@@ -32,13 +34,13 @@ const Hero = () => {
 
         {/* Main Heading */}
         <h1 className="text-6xl font-bold tracking-tight text-white sm:text-6xl md:text-6xl mt-12">
-  <span className="block">
-    Get <span className="font-['Playfair_Display'] italic font-normal text-7xl">more</span> Business
-  </span>
-  <span className="block">
-    with Facebook and Google ads.
-  </span>
-</h1>
+          <span className="block">
+            Get <span className="font-['Playfair_Display'] italic font-normal text-7xl">more</span> Business
+          </span>
+          <span className="block">
+            with Facebook and Google ads.
+          </span>
+        </h1>
         
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
           We help businesses grow online with professionally run Google and Facebook ads management.
@@ -46,37 +48,45 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="mt-10 flex flex-col items-center gap-y-4 sm:flex-row sm:gap-x-6 justify-center">
-          <a href="/contact" className="rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
+          <Link href="/contact" className="rounded-full bg-blue-600 px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg">
             Start Your Project
             <ArrowRight className="ml-2 inline-block" size={20} />
-          </a>
-          <a href="/#work" className="rounded-full bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-blue-400 hover:bg-white/20 transition-all duration-200 border border-blue-400">
+          </Link>
+          <Link href="/#work" className="rounded-full bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-blue-400 hover:bg-white/20 transition-all duration-200 border border-blue-400">
             View Our Work
-          </a>
+          </Link>
         </div>
 
         {/* Trusted By Section */}
         <div className="mt-12">
           <p className="font-medium text-gray-400">Trusted by hundreds of companies, including local businesses and ecommerce brands</p>
           <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-4 justify-center justify-items-center items-center mx-auto max-w-4xl">
-            <img 
+            <Image 
               src="/images/BATHROOM (200 x 50 px).svg" 
               alt="Book Your Boiler" 
+              width={200}
+              height={50}
               className="h-12 w-full object-contain" 
             />
-            <img 
+            <Image 
               src="/images/BATHROOM (200 x 50 px).png" 
               alt="Nova Tissue" 
+              width={200}
+              height={50}
               className="h-12 w-full object-contain" 
             />
-            <img 
+            <Image 
               src="/images/cropped-440971998_1402314967320734_801390844172152310_n-e1714760864427 (1).png" 
               alt="MAK Roofing" 
+              width={200}
+              height={50}
               className="h-12 w-full object-contain" 
             />
-            <img 
+            <Image 
               src="/images/logo-final-01 (1).png" 
               alt="Taxi Medical" 
+              width={200}
+              height={50}
               className="h-12 w-full object-contain" 
             />
           </div>

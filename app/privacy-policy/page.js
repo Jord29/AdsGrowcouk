@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
           <p>
             If you have any questions about this privacy policy, please contact us at{' '}
             <a href="mailto:hello@adsgrow.co.uk" className="text-blue-600 hover:underline">
-              ads@adsgrow.co.uk
+              hello@adsgrow.co.uk
             </a>
             .
           </p>

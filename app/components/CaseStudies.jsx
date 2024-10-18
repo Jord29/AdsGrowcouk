@@ -46,7 +46,7 @@ const CaseStudies = () => {
           </span>
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">Results speak for <span className="font-['Playfair_Display'] italic">themselves</span>.</h2>
           <p className="mt-4 text-xl text-gray-400 max-w-3xl mx-auto">
-            We've worked across a number of industries and have achieved some incredible results with some incredible people and brands.
+            We&apos;ve worked across a number of industries and have achieved some incredible results with some incredible people and brands.
           </p>
         </div>
 
